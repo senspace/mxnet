@@ -18,10 +18,10 @@ CFLAGS+= -I$(MXNET_ROOT)/include
 LDFLAGS+=$(MXNET_ROOT)/lib/libmxnet.so
 
 image-classification-predict: image-classification-predict.o
-	g++ -O3 -o image-classification-predict image-classification-predict.o $(LDFLAGS)
+	clang++ -O3 -o image-classification-predict image-classification-predict.o $(LDFLAGS)
 
 image-classification-predict.o: image-classification-predict.cc
-	g++ -O3 -c image-classification-predict.cc ${CFLAGS}
+	clang++ -O3 -c image-classification-predict.cc ${CFLAGS}
 	
 clean: 
 	rm image-classification-predict
