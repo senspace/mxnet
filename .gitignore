@@ -1,3 +1,12 @@
+# taglist
+tags
+
+# cscope
+cscope.*
+
+# Understand Index files
+*.udb
+
 # Compiled Object files
 *.slo
 *.lo
